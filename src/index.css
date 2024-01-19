@@ -1,0 +1,73 @@
+
+:root {
+  --yellow : #F9D54A;
+  --black : #161616;
+}
+body {
+  line-height: 1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: interBold;
+  src: url(./assets/fonts/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: interSemiBold;
+  src: url(./assets/fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: interMedium;
+  src: url(./assets/fonts/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: interRegular;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+body {
+  font-family: interRegular;
+  line-height: 1;
+}
+.container {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1260px) {
+  
+}
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 500px) {
+  
+}
+@media screen and (min-width: 551px) { 
+
+}
+@media screen and (min-width: 801px) { 
+
+}
+@media screen and (min-width: 1261px) { 
+
+}
+.btn-default, .btn-primary {
+  padding: 14px 40px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family:interBold;
+}
+.btn-primary {
+  padding: 18px 24px;
+}
+.btn--yellow {
+  background: var(--yellow) ;
+}
