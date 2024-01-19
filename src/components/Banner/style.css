@@ -1,0 +1,28 @@
+.banner {
+
+}
+.banner-bg {
+
+}
+.banner-content {
+    max-width: 992px;
+    margin: 0 auto;
+}
+h2.banner-title {
+    font-size: 60px;
+    font-weight: interSemiBold;
+    color: white;
+}
+.banner-desc {
+    
+}
+.banner-img {
+    max-width: 942px;
+}
+.banner-buttons {
+    display: flex;
+    gap: 20px;
+}
+.banner .banner-contact {
+    display: flex;
+}

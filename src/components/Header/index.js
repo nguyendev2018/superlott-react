@@ -22,18 +22,13 @@ function Header() {
                 <NavLink
                   to={item.link}
                   key={item.id}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "pr-12 hover:text-primary text-primary"
-                      : "pr-12 hover:text-primary"
-                  }
                 >
                   {item.values}
                 </NavLink>
               </li>
             ))}
           </ul>
-          <a href="/" className="btn-default btn--yellow">REWARD</a>
+          <a href="/" className="btn-header btn-default btn--yellow">REWARD</a>
         </div>
       </nav>
     </>

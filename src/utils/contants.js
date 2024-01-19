@@ -2,7 +2,7 @@ import path from "./path";
 export const navigation = [
     {
         id : 1,
-        values : "DAPP",
+        values : "Dapp",
         link : `/${path.DAPP}`
     },
     {
