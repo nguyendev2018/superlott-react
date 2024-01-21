@@ -5,6 +5,7 @@
 }
 body {
   font-family: interRegular;
+  background: black;
 }
 *{
   margin: 0;
@@ -31,7 +32,23 @@ body {
 
 h1{
   font-size: 60px;
-  font-weight: interSemiBold;
+  font-family: interSemiBold;
+}
+h2{
+  color: white;
+  font-size: 48px;
+  font-family: interSemiBold;
+  text-align: center;
+}
+h2.title-block {
+  text-align: left;
+
+}
+p.desc {
+  font-size: 16px;
+  color:#B6B1C8;
+  line-height: 1.5;
+  font-family: interSemiBold;
 }
 img {
   width: 100%;
@@ -39,23 +56,40 @@ img {
   display: block;
 }
 .container {
-  max-width: 1900px;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+.content-padding--left {
+  padding-left: 160px;
+}
+.content-padding--right {
+  padding-right: 160px;
+}
+.wrapper-content{
+  /* max-width: 450px; */
+}
+.btn-block{
+  margin-top: 64px;
+}
 @media screen and (max-width: 1260px) {
   
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 801px){
+  h2 {
+    font-size: 38px;
+  }
 
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 551px) {
   h1{
     font-size: 30px;
   }
-  
+  h2 {
+    font-size: 28px;
+  }
 }
 @media screen and (min-width: 551px) { 
 
@@ -73,6 +107,7 @@ img {
   text-decoration: none;
   font-family:interBold;
   color: black;
+  display: inline-block;
 }
 .btn-primary {
   padding: 18px 24px;

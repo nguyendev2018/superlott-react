@@ -1,0 +1,59 @@
+@font-face {
+    font-family: soraBold;
+    src: url(./fonts/Sora-Bold.ttf);
+  }
+.superlott{
+    padding-bottom: 35px;
+}
+.superlott-wrapper{
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+    padding-bottom: 75px;
+}
+.superlott-item{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.superlott-item > span {
+    font-family: soraBold;
+    font-size: 28px;
+    color: white;
+
+}
+.superlott-img{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+@media screen and (max-width : 1280px) {
+    .superlott-wrapper{
+        overflow-x: scroll;
+    }
+    .superlott-wrapper::-webkit-scrollbar {
+        height: 6px;               /* width of the entire scrollbar */
+    }
+    .superlott-wrapper::-webkit-scrollbar-thumb {
+        background-color: #d9d9d9;
+    }
+}
+@media screen and (max-width : 801px) {
+    .superlott-wrapper {
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .superlott-item > span {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width : 551px) {
+    .superlott-wrapper {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .superlott-item > span {
+        font-size: 16px;
+    }
+}

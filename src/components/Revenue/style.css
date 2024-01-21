@@ -1,0 +1,25 @@
+.revenue{
+
+}
+.container{
+
+}
+.revenue-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    margin-top: 84px;
+}
+.revenue-wrapper h3 {
+    font-size: 32px;
+    font-family: interMedium;
+    color: white;
+    text-align: center;
+}
+.revenue-item {
+    max-width: 50%;
+    width: 100%;
+}
+.revenue-item img{
+    object-fit: cover;
+}

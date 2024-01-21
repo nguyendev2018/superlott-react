@@ -1,9 +1,11 @@
 import React from 'react'
+import { Banner, SuperLott } from '../components'
 
 const Home = () => {
   return (
     <>
-     <h1>Trang home</h1>
+      <Banner></Banner>
+      <SuperLott></SuperLott>
     </>
   )
 }

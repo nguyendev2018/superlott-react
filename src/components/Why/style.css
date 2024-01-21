@@ -1,0 +1,50 @@
+.why{
+    padding-top: 500px;
+}
+.container{
+
+}
+.why-wrapper{
+    display: flex;
+    gap: 48px;
+    position: relative;
+    justify-content: flex-end;
+}
+.why-content{
+    max-width: 30%;
+    width: 100%;
+}
+.wrapper-content{
+
+}
+.title-block{
+
+}
+.desc{
+
+}
+
+.why-item{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+}
+.why-item + .why-item {
+    margin-top: 36px;
+}
+.why-item span {
+    color: white;
+    font-size: 16px;
+}
+.why-item > img {
+    width: 24px;
+    height: 24px;
+}
+.why-img{
+    max-width: 70%;
+    width: 100%;
+    position: absolute;
+    top: -500px;
+    left: 0;
+}

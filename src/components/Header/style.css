@@ -30,34 +30,16 @@ nav ul li a{
   text-transform: uppercase;
   text-decoration: none;
 }
-nav ul li a:hover {
-  background: #F9D54A;
-}
 nav .btn-header {
   font-size: 16px;
 }
 
 .menu-mobile{
-  font-size: 30px;
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-#check{
-  display: none;
-}
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
+
 section{
   
   background-size: cover;
@@ -75,24 +57,73 @@ section{
 @media screen and (max-width: 992px) {
   .menu-mobile{
     display: block;
+    
+  }
+  .icon-bar {
+    width: 30px;
+    height: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  .icon-bar.is-active .icon-barChild::after {
+    transform: rotate(45deg);
+
+  }
+  .icon-barChild,.icon-barChild::after,.icon-barChild::before {
+    display: block;
+    background: white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    transition: .3s;
+  }
+  .menu-mobile .icon-barChild * {
+    position: absolute;
+  }
+  .menu-mobile .icon-barChild {
+    top: 0;
+  }
+  .icon-bar.is-active .icon-barChild {
+    background: transparent;
+  }
+
+  .menu-mobile .icon-barChild::after{
+    content: "";
+    bottom: -8px;
+    left: 0;
+  }
+  .menu-mobile .icon-barChild::before {
+    content : "";
+    top: 16px;
+    left: 0;
+  }
+  .icon-bar.is-active .icon-barChild::before {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  .nav-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   ul{
     position: fixed;
-    width: 100%;
+    width: calc(100% - 50%);
     height: 100vh;
-    background: #2c3e50;
-    top: 80px;
+    background: #0E0C15;
+    top: 66px;
     left: -100%;
     text-align: center;
     transition: all .5s;
   }
+  ul.is-active {
+    left: 0;
+  }
   nav ul li{
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
   }
   nav ul li a{
-    font-size: 20px;
+    font-size: 16px;
   }
   nav .btn-header{
     padding: 14px 34px;
@@ -102,4 +133,7 @@ section{
 
 }
 @media screen and (max-width: 550px) {
+  nav ul li a{
+    font-size: 14px;
+  }
 }
