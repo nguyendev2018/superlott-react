@@ -45,29 +45,14 @@
     color: #8C91A2;
     font-size: 14px;
 }
-.fair-img{
-    max-width: 60%;
-    width: 100%;
-    position: absolute;
-    top: -350px;
-    right: 0;
-}
+
 .fair-img .desktop {
     display: block;
 }
 .fair-img .mobile {
     display: none;
 }
-@media screen and (max-width: 1920px){
-.fair-img {
-    top: -250px;
-}
-}
-@media screen and (max-width: 992px){
-    .fair-img {
-        top: -150px;
-    }
-}
+
 @media screen and (max-width: 801px){
     .fair-img {
         position: unset;

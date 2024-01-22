@@ -5,7 +5,6 @@ function Banner() {
         <>
             <div className="banner">
                 <div className="banner-content">
-                    <div className="banner-bg"></div>
                     <h2 className="banner-title">Super lottery on the equity <span>blockchain</span>  technology platform</h2>
                     <p className="banner-desc">
                         Global decentralize network to buy & share lottery ticket easily

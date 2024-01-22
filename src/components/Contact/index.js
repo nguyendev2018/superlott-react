@@ -5,7 +5,7 @@ function Contact() {
       <div className="contact">
         <div className="contact-wrapper">
           <h2>Contact us</h2>
-          <p>Any question? Reach out to us and we’ll get back to you shortly.</p>
+          <p className="desc">Any question? Reach out to us and we’ll get back to you shortly.</p>
           <p>admin@superlott.io</p>
           <form action="">
             <input type="text" placeholder="Your Name" className="contact-input" />

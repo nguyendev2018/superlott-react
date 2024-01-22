@@ -1,17 +1,14 @@
 .why{
-    padding-top: 500px;
+  
 }
-.container{
 
-}
 .why-wrapper{
     display: flex;
-    gap: 48px;
-    position: relative;
-    justify-content: flex-end;
+    gap: 120px;
+    justify-content: space-between;
 }
 .why-content{
-    max-width: 30%;
+    max-width: 40%;
     width: 100%;
 }
 .wrapper-content{
@@ -42,9 +39,17 @@
     height: 24px;
 }
 .why-img{
-    max-width: 70%;
+    max-width: 60%;
     width: 100%;
-    position: absolute;
-    top: -500px;
-    left: 0;
+    background-image: url('./img/bg-why.png');
+    background-size:contain ;
+    background-repeat:no-repeat ;
+}
+@media screen and (max-width: 1920px) {
+     .why-content {
+        max-width: 30%;
+    }
+    .why-img{
+        max-width: 70%;
+    }
 }

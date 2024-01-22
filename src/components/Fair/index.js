@@ -1,14 +1,13 @@
 import React from 'react'
 import './style.css'
 import imgPlatform from "./img/plaform.png";
-import imgPlatformMobile from "./img/plaform--mobile.png";
 import imgCricle from "./img/circle-button.png"
 function Fair() {
   return (
     <div className='fair'>
-        <div className="container">
+        <div className="container-block">
             <div className="fair-wrapper">
-                <div className="fair-content content-padding--left">
+                <div className="fair-content">
                     <div className="wrapper-content">
                         <h2 className='title-block'>Fair platform for player</h2> 
                         <p className="desc">
@@ -24,8 +23,7 @@ function Fair() {
                     </div>
                 </div>
                 <div className="fair-img">
-                        <img src={imgPlatform} alt="img-platform" className='desktop' /> 
-                        <img src={imgPlatformMobile} alt="img-platform--mobile" className='mobile' />
+                    <img src={imgPlatform} alt="img-platform" className='desktop' /> 
                 </div>
             </div>
         </div>

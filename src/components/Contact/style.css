@@ -1,6 +1,9 @@
 .contact{
 
 }
+.contact .desc {
+    text-align: center;
+}
 .contact-wrapper{
     max-width: ;
     margin-left: auto;
@@ -9,5 +12,9 @@
     padding-right: 15px;
 }
 .contact-input{
-
+    background: transparent;
+    border: none;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
 }

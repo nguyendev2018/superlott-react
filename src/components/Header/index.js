@@ -37,7 +37,7 @@ function Header() {
               </li>
             ))}
           </ul>
-          <a href="/" className="btn-header btn-default btn--yellow">REWARD</a>
+          <Link to="/" className="btn-header btn-default btn--yellow">REWARD</Link>
         </div>
       </nav>
     </>

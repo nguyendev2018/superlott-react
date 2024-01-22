@@ -28,11 +28,12 @@ function Why() {
     ]
   return (
     <div className='why'>
-        <div className="why-wrapper">
+        <div className="container-block">
+            <div className="why-wrapper">
             <div className="why-img">
                 <img src={imgWhy} alt="img-why" />
             </div>
-            <div className="why-content content-padding--right">
+            <div className="why-content">
                 <div className="wrapper-content">
                     <h2 className='title-block'>Why is lottery blockchain?</h2> 
                     <p className="desc">
@@ -48,6 +49,7 @@ function Why() {
                     </div>
                     <Link href="/" className="btn-block btn-primary btn--yellow">get started</Link>
                 </div>
+            </div>
             </div>
         </div>
     </div>

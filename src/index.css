@@ -1,0 +1,6 @@
+.bg-section {
+    background-image: url(../public/bg-section.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 100%;
+}
