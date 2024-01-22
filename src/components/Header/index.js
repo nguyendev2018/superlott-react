@@ -20,7 +20,7 @@ function Header() {
             <div className={` icon-bar ${showMenu && "is-active"}`} onClick={handleShowNavbar}>
               <span className="icon-barChild"></span>
             </div>
-            
+            <div className="has-previewMenuOpened"></div>
           </div>
           <Link to={`${path.HOME}`} className="logo">
             <img src={logo} alt="logo" />
