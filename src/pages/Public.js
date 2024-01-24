@@ -1,8 +1,9 @@
 import React from 'react'
-import {Header, Banner, SuperLott, Fair } from '../components'
+import {Header, Banner, SuperLott, Fair, Roadmap } from '../components'
 import Why from '../components/Why'
 import Revenue from '../components/Revenue'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Public = () => {
   return (
@@ -16,6 +17,8 @@ const Public = () => {
       <Why/>
       <Revenue/>
       <Contact/>
+      <Roadmap/>
+      <Footer/>
     </>
   )
 }

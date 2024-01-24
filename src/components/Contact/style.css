@@ -1,20 +1,56 @@
 .contact{
-
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .contact .desc {
     text-align: center;
 }
+.contact .desc-admin {
+    color: #F1CF49;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: interBold;
+}
 .contact-wrapper{
-    max-width: ;
+    max-width:1200px ;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.contact-input{
+
+.form-input{
     background: transparent;
     border: none;
     width: 100%;
     flex-direction: column;
     display: flex;
+    margin-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
+    color: white;
+}
+.form-input:focus {
+    outline: none;
+}
+.form-input::placeholder {
+    font-size: 16px;
+    text-align: center;
+}
+.contact .button-submit {
+    padding: 18px 50px;
+    cursor: pointer;
+    background: var(--yellow);
+    outline: none;
+    font-size: 14px;
+    font-family: interBold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
 }

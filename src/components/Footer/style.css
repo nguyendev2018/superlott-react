@@ -1,0 +1,11 @@
+.footer {
+    background: #191626;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.footer-desc {
+    font-size: 14px;
+    font-family: interRegular;
+    color: #CAC6DD;
+    text-align: center;
+}

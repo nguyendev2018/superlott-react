@@ -6,6 +6,7 @@
 body {
   font-family: interRegular;
   background: #0E0C15;
+  color: white;
 }
 *{
   margin: 0;
@@ -117,5 +118,5 @@ img {
   padding: 18px 24px;
 }
 .btn--yellow {
-  background: var(--yellow) ;
+  background: var(--yellow);
 }
