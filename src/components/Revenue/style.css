@@ -20,13 +20,30 @@
     max-width: 50%;
     width: 100%;
 }
+.revenue-item p {
+    font-size: 32px;
+    font-family: interMedium;
+    text-align: center;
+}
 .revenue-item img{
     object-fit: cover;
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1260px){
+    .revenue-item p {
+        font-size: 25px;
+
+    }
     .revenue-wrapper{
-        flex-direction: column;
         gap: 100px;
-        margin-top: 0;
+    }
+}
+@media screen and (max-width: 801px){
+    .revenue-item p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 551px){
+    .revenue-wrapper {
+        gap: 30px;
     }
 }

@@ -4,6 +4,7 @@ import Why from '../components/Why'
 import Revenue from '../components/Revenue'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Our from '../components/Our'
 
 const Public = () => {
   return (
@@ -16,6 +17,7 @@ const Public = () => {
       <Fair/> 
       <Why/>
       <Revenue/>
+      <Our/>
       <Contact/>
       <Roadmap/>
       <Footer/>

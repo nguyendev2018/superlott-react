@@ -1,5 +1,26 @@
+import { useEffect } from "react";
 import "./style.css";
+// import mailchimp from '@mailchimp/mailchimp_marketing';
+
 function Contact() {
+  // useEffect(() => {
+  //   // Khởi tạo Mailchimp API với khóa API của bạn
+  //   mailchimp.setConfig({
+  //     apiKey: 'YOUR_API_KEY',
+  //     server: 'YOUR_SERVER_PREFIX',
+  //   });
+  //     // Sử dụng phương thức API, ví dụ: lấy thông tin về danh sách đăng ký
+  //     async function getListInfo() {
+  //       try {
+  //         const response = await mailchimp.lists.getAllLists();
+  //         console.log(response);
+  //       } catch (error) {
+  //         console.error(error);
+  //       }
+  //     }
+  
+  //     getListInfo();
+  //   }, []);
   return (
     <>
       <div className="contact">
