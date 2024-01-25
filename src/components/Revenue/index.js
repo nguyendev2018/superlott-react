@@ -8,9 +8,8 @@ const Revenue = () => {
         <h2>Revenue Structure</h2>
         <div className="container">
             <div className="revenue-wrapper">
-                <div className="revenue-item">
+                <div className="revenue-item revenue-token">
                     <img src={token} alt="img-token" />
-                    
                     <p>Token Distribution</p>
                 </div>
                 <div className="revenue-item">

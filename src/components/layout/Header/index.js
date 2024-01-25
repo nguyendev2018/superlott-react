@@ -27,7 +27,7 @@ function Header() {
           </Link>
           <ul className={`${showMenu && "is-active"}`}>
             {navigation.map((item) => (
-              <li>
+              <li key={item.id}>
                 <NavLink
                   to={item.link}
                   key={item.id}

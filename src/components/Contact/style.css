@@ -5,12 +5,17 @@
 .contact .desc {
     text-align: center;
 }
+.desc-contact{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 .contact .desc-admin {
     color: #F1CF49;
     text-transform: uppercase;
     font-size: 14px;
     text-align: center;
     font-family: interBold;
+    margin-bottom: 71px;
 }
 .contact-wrapper{
     max-width:1200px ;
@@ -30,8 +35,10 @@
     padding-bottom: 16px;
     border-bottom: 1px solid rgb(255 255 255 / 50%);
     color: white;
+    text-align: center;
 }
 .form-input:focus {
+    top: 10px;
     outline: none;
 }
 .form-input::placeholder {

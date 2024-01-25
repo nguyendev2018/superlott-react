@@ -62,7 +62,7 @@ function Our() {
         <div className="container">
           <div className="our-list">
             {listOur.map((item) => (
-              <div className="our-item">
+              <div className="our-item" key={item.id}>
                 <img src={item.layer} alt="img" className="our-item--img" />
                 <h3>{item.title}</h3>
                 <p className="our-item--desc desc">{item.desc}</p>
