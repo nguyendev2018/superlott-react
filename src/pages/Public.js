@@ -5,15 +5,12 @@ import Revenue from '../components/Revenue'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Our from '../components/Our'
-
 const Public = () => {
   return (
     <>
       <Header/>
-      <div className="bg-section">
         <Banner/>
         <SuperLott/>
-      </div>
       <Fair/> 
       {/* <Why/> */}
       <Revenue/>

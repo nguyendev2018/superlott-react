@@ -10,6 +10,7 @@ const Revenue = () => {
             <div className="revenue-wrapper">
                 <div className="revenue-item">
                     <img src={token} alt="img-token" />
+                    
                     <p>Token Distribution</p>
                 </div>
                 <div className="revenue-item">

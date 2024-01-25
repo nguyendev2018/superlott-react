@@ -8,6 +8,9 @@ body {
   background: #0E0C15;
   color: white;
 }
+body:has(ul.is-active) {
+  overflow: hidden;
+}
 *{
   margin: 0;
   padding: 0;

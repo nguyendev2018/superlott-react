@@ -1,9 +1,9 @@
-import { navigation } from "../../utils/contants";
-import path from "../../utils/path";
+import { navigation } from "../../../utils/contants";
+import path from "../../../utils/path";
 import "./style.css";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import logo from "../../assets/img/logo.png";
+import logo from "../../../assets/img/logo.png";
 import { useState } from "react";
 
 function Header() {
@@ -20,7 +20,7 @@ function Header() {
             <div className={` icon-bar ${showMenu && "is-active"}`} onClick={handleShowNavbar}>
               <span className="icon-barChild"></span>
             </div>
-            <div className="has-previewMenuOpened"></div>
+            {/* <div className={`has-previewMenuOpened ${showMenu && "is-active"}`}></div> */}
           </div>
           <Link to={`${path.HOME}`} className="logo">
             <img src={logo} alt="logo" />

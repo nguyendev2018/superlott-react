@@ -2,65 +2,53 @@ import "./style.css";
 function Roadmap() {
   return (
     <>
-      <h2>Roadmap</h2>
-      <div class="timeline">
-  <div class="timeline__component">
-    <div class="timeline__date timeline__date--right">August 30, 2017</div>
-  </div>
-  <div class="timeline__middle">
-    <div class="timeline__point"></div>
-  </div>
-  <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">Published First Video</h2>
-    <p class="timeline__paragraph">
-      My first YouTube video was a tutorial on how to build a client-server sockets app in Java.
-    </p>
-  </div>
-  <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">5,000 Subscribers Q&A</h2>
-    <p class="timeline__paragraph">
-      To celebrate 5,000 subscribers, I published a video answering some of the most popular questions which
-      my viewers had asked me since starting my YouTube channel.
-    </p>
-    <p class="timeline__paragraph">
-      I didn't even remove the jumper in the background before recording that video 🤣
-    </p>
-  </div>
-  <div class="timeline__middle">
-    <div class="timeline__point"></div>
-  </div>
-  <div class="timeline__component">
-    <div class="timeline__date">February 25, 2019</div>
-  </div>
-  <div class="timeline__component">
-    <div class="timeline__date timeline__date--right">June 3, 2020</div>
-  </div>
-  <div class="timeline__middle">
-    <div class="timeline__point"></div>
-  </div>
-  <div class="timeline__component timeline__component--bg">
-    <h2 class="timeline__title">First Live Stream</h2>
-    <p class="timeline__paragraph">
-      In my first ever live stream, I couldn't put my cup of coffee down.
-    </p>
-  </div>
-  <div class="timeline__component timeline__component--bottom timeline__component--bg">
-    <h2 class="timeline__title">Vertical Timeline</h2>
-    <p class="timeline__paragraph">
-      Published this video.
-    </p>
-    <p class="timeline__paragraph">
-      Link to code in description 🔽
-    </p>
-  </div>
-  <div class="timeline__middle">
-    <div class="timeline__point"></div>
-    <div class="timeline__point timeline__point--bottom"></div>
-  </div>
-  <div class="timeline__component timeline__component--bottom">
-    <div class="timeline__date">June 28, 2021</div>
-  </div>
-</div>
+      <h2>Roadmap</h2>F
+      <div className="flex-parent">
+        <div className="input-flex-container">
+          <div className="input">
+            <span data-year={1910} data-info="headset" />
+          </div>
+          <div className="input">
+            <span data-year={1920} data-info="jungle gym" />
+          </div>
+          <div className="input active">
+            <span data-year={1930} data-info="chocolate chip cookie" />
+          </div>
+          <div className="input">
+            <span data-year={1940} data-info="Jeep" />
+          </div>
+          <div className="input">
+            <span data-year={1950} data-info="leaf blower" />
+          </div>
+          <div className="input">
+            <span data-year={1960} data-info="magnetic stripe card" />
+          </div>
+          <div className="input">
+            <span data-year={1970} data-info="wireless LAN" />
+          </div>
+          <div className="input">
+            <span data-year={1980} data-info="flash memory" />
+          </div>
+          <div className="input">
+            <span data-year={1990} data-info="World Wide Web" />
+          </div>
+          <div className="input">
+            <span data-year={2000} data-info="Google AdWords" />
+          </div>
+        </div>
+        <div className="description-flex-container">
+          <p>And future Call of Duty players would thank them.</p>
+          <p>Because every kid should get to be Tarzan for a day.</p>
+          <p className="active">And the world rejoiced.</p>
+          <p>Because building roads is inconvenient.</p>
+          <p>Ain’t nobody got time to rake.</p>
+          <p>Because paper currency is for noobs.</p>
+          <p>Nobody likes cords. Nobody.</p>
+          <p>Brighter than glow memory.</p>
+          <p>To capitalize on an as-yet nascent market for cat photos.</p>
+          <p>Because organic search rankings take work.</p>
+        </div>
+      </div>
     </>
   );
 }
