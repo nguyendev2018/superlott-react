@@ -36,7 +36,7 @@ function Why() {
             <div className="why-content">
                 <div className="wrapper-content">
                     <h2 className='title-block'>Why is lottery blockchain?</h2> 
-                    <p className="desc">
+                    <p className="block-desc desc">
                         We’re building the global equity blockchain platform – that is secure, smart and easy-to-use platform, and completely change the way that the player buy and share tickets. That is a decentralized lottery platform on blockchain It's: Fair - validate - true
                     </p>
                     <div className="why-list">

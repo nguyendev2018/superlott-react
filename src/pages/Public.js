@@ -15,7 +15,7 @@ const Public = () => {
         <SuperLott/>
       </div>
       <Fair/> 
-      <Why/>
+      {/* <Why/> */}
       <Revenue/>
       <Our/>
       <Contact/>
