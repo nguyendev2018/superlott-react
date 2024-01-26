@@ -25,7 +25,7 @@ function Header() {
           <Link to={`${path.HOME}`} className="logo">
             <img src={logo} alt="logo" />
           </Link>
-          <ul className={`${showMenu && "is-active"}`}>
+          <ul className={`list-menu ${showMenu && "is-active"}`}>
             {navigation.map((item) => (
               <li key={item.id}>
                 <NavLink

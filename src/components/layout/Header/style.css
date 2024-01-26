@@ -124,7 +124,7 @@ section{
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  ul{
+  ul.list-menu{
     position: fixed;
     width: calc(100% - 50%);
     height: 100vh;
@@ -145,7 +145,7 @@ section{
     top: 0;
     left: 0; */
   }
-  ul.is-active {
+  ul.list-menu.is-active {
     left: 0;
     z-index: 10;
   }

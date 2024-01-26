@@ -3,7 +3,7 @@ import {Header, Banner, SuperLott, Fair, Roadmap } from '../components'
 import Why from '../components/Why'
 import Revenue from '../components/Revenue'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import Footer from '../components/layout/Footer'
 import Our from '../components/Our'
 const Public = () => {
   return (

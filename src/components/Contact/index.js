@@ -36,9 +36,9 @@ function Contact() {
             <p className="desc desc-contact">Any question? Reach out to us and we’ll get back to you shortly.</p>
             <p className="desc-admin">admin@superlott.io</p>
             <form onSubmit={handleSubmit}>
-              {/* <input type="text" placeholder="Your Name" className="form-input" value={name} onChange={(e) => setName(e.target.value)} /> */}
+              <input type="text" placeholder="Your Name" className="form-input" value={name} onChange={(e) => setName(e.target.value)} />
               <input type="email" placeholder="Your Email" className="form-input" value={email} onChange={(e) => setEmail(e.target.value)} />
-              {/* <input type="text" placeholder="Your Message" className="form-input" value={mess} onChange={(e) => setMess(e.target.value)}/> */}
+              <input type="text" placeholder="Your Message" className="form-input" value={mess} onChange={(e) => setMess(e.target.value)}/>
               <input type="submit" className="button-submit btn-contact" value={'submit'} />
             </form>
         </div>
