@@ -1,0 +1,90 @@
+.how{
+
+}
+.container-block{
+
+}
+.how-wrapper{
+    display: flex;
+    gap: 192px;
+}
+.how-list{
+    margin-top: 50px;
+}
+.how-list h4 {
+    margin-bottom: 24px;
+}
+.how .how-block--desc{
+    margin-top: 16px;
+    font-family: interRegular;
+}
+.how-block--desc {
+    font-size: 16px;
+    color: #B6B1C8;
+    line-height: 1.5;
+}
+.how-block--desc a {
+    text-decoration: none;
+    color: white;
+}
+.how-item--check{
+    display: flex;
+    gap: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom:1px solid rgb(255 255 255 / 10%);
+}
+.how-item--check img {
+    width: 24px;
+    height: 24px;
+}
+.how-block--img{
+    max-width: 60%;
+    width: 100%;
+}
+.how-block--content{
+    max-width: 40%;
+    width: 100%;
+}
+.desc{
+
+}
+.how-list{
+
+}
+.how-item{
+
+}
+.how-block--check{
+
+}
+.how-list--win h4 {
+    margin-bottom: 24px;
+}
+.how-wrapper--win .how-block--content{
+    margin-top: 30px;
+}
+@media screen and (max-width: 1260px){
+    .how-wrapper {
+        gap: 50px;
+    }
+    .how-list{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 802px){
+    .how-wrapper {
+        flex-direction: column;
+    }
+    .how-block--content{
+        max-width: 100%;
+    }
+    .how-block--img{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:551px) {
+    .how-block--img{
+        max-width: 100%;
+    }
+}

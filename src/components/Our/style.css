@@ -43,9 +43,7 @@
     font-family:interSemiBold ;
 
 }
-.our-item--img{
 
-}
 .our-item--desc{
     
 }
@@ -131,6 +129,7 @@
 @media screen and (max-width: 551px){
   .our-list {
     grid-template-columns: repeat(1,1fr);
+    place-items: center;
   }
   .our-item--icon{
     width: 100px;

@@ -1,6 +1,8 @@
 import "./style.css";
 import imgHow from "./img/img-how.png";
 import icon from "../Icon/icon.png";
+import imgSupper from "./img/img-supper.png"
+import { Link } from "react-router-dom";
 function How() {
     const howList = [
       {
@@ -57,11 +59,6 @@ function How() {
       {
         id : 5,
         text : "Winners have 60 days to claim their prizes. Winners give 10% of the money to charity or other good works."
-      }
-      ,
-      {
-        id : 6,
-        text : "Haven’t found what you’re looking for? Contact us"
       }
     ]
     const listSuper= [
@@ -126,54 +123,94 @@ function How() {
         <>
           <div className="how">
             <h2>How to play</h2>
-            <div className="container">
+            <div className="container-block">
               <div className="how-wrapper">
                 <div className="how-block--img">
                   <img src={imgHow} alt="img-how" />
                 </div>
                 <div className="how-block--content">
-                  <p className="desc">
+                  <h3>Megalott</h3>
+                  <p className="desc how-block--desc">
                     Ticket price 1$. The 6 numbers from 01 -45 for one in 3 times lottery prize (Monday, Wednesday, Friday) at 20:30 pm UTC+0
                   </p>
-                  <p className="desc">
+                  <p className="desc how-block--desc">
                     Total of 4 prizes with starting prize $200,000
                   </p>
                   <div className="how-list">
                   {howList.map((item) => (
-                    <div className="how-item">
-                          <div className="how-item">
-                              <img src='/images/icon.png' alt="icon" />
-                              <span>{item.text}</span>
-                          </div>
-                    </div>
-                      ))}
+                      <div className="how-item--check">
+                          <img src={icon} alt="icon" />
+                          <span>{item.text}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-              <div className="how-wrapper">
-                <div className="how-block--check">
-                    {listDesc.map((item) => (
-                      <div className="how-check--item" key={item.id}>
-
+              <div className="how-wrapper how-wrapper--win">
+                <div className="how-list--win">
+                  <h4>How to play and win the Megalott?</h4>
+                  {winMega.map((item) => (
+                      <div className="how-item--check">
+                          <img src={icon} alt="icon" />
+                          <span>{item.text}</span>
                       </div>
                     ))}
                 </div>
                 <div className="how-block--content">
-                  <p className="desc">
+                  <div className="how-list">
+                    {contentMega.map((item) => (
+                        <p className="desc how-block--desc">
+                          {item.text}
+                        </p>
+                      ))}
+                      <div className="desc how-block--desc">
+                        Haven’t found what you’re looking for? <Link to="/">Contact us</Link>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div className="how-wrapper">
+                <div className="how-block--content">
+                  <h3>Megalott</h3>
+                  <p className="desc how-block--desc">
                     Ticket price 1$. The 6 numbers from 01 -45 for one in 3 times lottery prize (Monday, Wednesday, Friday) at 20:30 pm UTC+0
                   </p>
-                  <p className="desc">
+                  <p className="desc how-block--desc">
                     Total of 4 prizes with starting prize $200,000
                   </p>
                   <div className="how-list">
                   {howList.map((item) => (
-                    <div className="how-item">
-                          <div className="how-item">
-                              <img src='/images/icon.png' alt="icon" />
-                              <span>{item.text}</span>
-                          </div>
-                    </div>
+                      <div className="how-item--check">
+                          <img src={icon} alt="icon" />
+                          <span>{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="how-block--img">
+                  <img src={imgHow} alt="img-how" />
+                </div>
+              </div>
+              <div className="how-wrapper how-wrapper--win">
+                <div className="how-list--win">
+                  <h4>How to play and win the Megalott?</h4>
+                  {winMega.map((item) => (
+                      <div className="how-item--check">
+                          <img src={icon} alt="icon" />
+                          <span>{item.text}</span>
+                      </div>
+                    ))}
+                </div>
+                <div className="how-block--content">
+                  <div className="how-list">
+                    {contentMega.map((item) => (
+                        <p className="desc how-block--desc">
+                          {item.text}
+                        </p>
                       ))}
+                      <div className="desc how-block--desc">
+                        Haven’t found what you’re looking for? <Link to="/">Contact us</Link>
+                      </div>
                   </div>
                 </div>
               </div>

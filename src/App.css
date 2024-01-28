@@ -33,6 +33,42 @@ body:has(ul.is-active) {
   src: url(./assets/fonts/Inter-Regular.ttf);
 }
 
+.img-section{
+  position: absolute;
+}
+.img-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+h3{
+  font-size: 32px;
+  font-family: interBold;
+}
+h4 {
+  font-size: 32px;
+  font-family: interRegular;
+}
+.general-section {
+  width: 100%;
+  height: 100%;
+ 
+  position: relative;
+}
+.general-section::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('./components/Banner/img/bg-section.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 
 h1{
   font-size: 60px;
@@ -43,6 +79,7 @@ h2{
   font-size: 48px;
   font-family: interSemiBold;
   text-align: center;
+  margin-bottom: 80px;
 }
 h2.title-block {
   text-align: left;
@@ -55,6 +92,12 @@ p.desc {
   font-family: interSemiBold;
 }
 img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+img.img-fluid {
   width: 100%;
   height: 100%;
   display: block;
@@ -76,15 +119,42 @@ img {
 .content-padding--right {
   padding-right: 160px;
 }
-.wrapper-content{
-  /* max-width: 450px; */
-}
 .btn-block{
   margin-top: 64px;
 }
 .block-desc{ 
   margin-top: 24px;
   margin-bottom:40px;
+}
+/* general-order1--wrapper */
+.general-order1--wrapper{
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+.general-order1--content{
+  max-width: 40%;
+  width: 100%;
+}
+/* general-order2--img */
+.general-order2--wrapper {
+  display: flex;
+  gap: 120px;
+  justify-content: space-between;
+}
+.general-order2--img{
+  max-width: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.general-order2--content{
+  max-width: 40%;
+  width: 100%;
+}
+@media screen and (max-width: 551px){
+ 
+  
 }
 @media screen and (max-width: 1260px) {
   
@@ -93,7 +163,28 @@ img {
   h2 {
     font-size: 38px;
   }
-
+  .general-order1--wrapper{
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+  .general-order1--content{
+    max-width: 100%;
+  }
+  .general-order1--img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .general-order2--img{
+    max-width: 100%;
+    justify-content: center;
+  }
+  .general-order2--content{
+    max-width: 100%;
+  }
+  .general-order2--wrapper {
+    flex-direction: column;
+  } 
 }
 @media screen and (max-width: 551px) {
   h1{

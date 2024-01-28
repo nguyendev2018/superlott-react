@@ -15,9 +15,9 @@ function Roadmap() {
       <h2>Roadmap</h2>
       <div className="container">
         <div className="row">
-          <div className="section_5-content">
-            <div className="section_5-slider-trumb" />
-            <div id="section_5-slider-circle">
+          <div className="roadmap-content">
+            <div className="roadmap-slider-trumb" />
+            <div id="roadmap-slider-circle">
               <div
                 style={{ left: "10%" }}
                 className="data_cir cir_0"

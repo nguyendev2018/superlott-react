@@ -5,8 +5,8 @@ import Contact from '../components/Contact'
 const Home = () => {
   return (
     <>
-      <Banner></Banner>
-      <SuperLott></SuperLott>
+        <Banner></Banner>
+        <SuperLott></SuperLott>
       <Contact></Contact>
     </>
   )

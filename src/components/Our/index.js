@@ -59,7 +59,8 @@ function Our() {
   return (
     <>
       <div className="our">
-        <div className="container">
+        <h2>Our Code Services</h2>
+        <div className="container container-block">
           <div className="our-list">
             {listOur.map((item) => (
               <div className="our-item" key={item.id}>

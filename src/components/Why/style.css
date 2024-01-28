@@ -1,55 +1,26 @@
-.why{
-  
+
+.why {
+    background-image: url('./img/bg-why.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.why-wrapper{
+.block-item--check{
     display: flex;
-    gap: 120px;
-    justify-content: space-between;
-}
-.why-content{
-    max-width: 40%;
-    width: 100%;
-}
-.wrapper-content{
-
-}
-.title-block{
-
-}
-.desc{
-
-}
-
-.why-item{
-    display: flex;
-    align-items: center;
     gap: 22px;
 
 }
-.why-item + .why-item {
+.block-item--check + .block-item--check {
     margin-top: 36px;
 }
-.why-item span {
+.block-item--check span {
     color: white;
     font-size: 16px;
+    line-height: 1.5;
 }
-.why-item > img {
+.block-item--check > img {
     width: 24px;
     height: 24px;
-}
-.why-img{
-    max-width: 60%;
-    width: 100%;
-    background-image: url('./img/bg-why.png');
-    background-size:contain ;
-    background-repeat:no-repeat ;
-}
-@media screen and (max-width: 1920px) {
-     .why-content {
-        max-width: 30%;
-    }
-    .why-img{
-        max-width: 70%;
-    }
 }

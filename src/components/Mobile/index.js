@@ -1,6 +1,8 @@
 import "./style.css";
 import imgMobile from "./img/img-mobile.png";
+import imgIcon from "../Icon/icon.png";
 import { Link } from "react-router-dom";
+
 function Mobile() {
   const listNote = [
     {
@@ -26,30 +28,32 @@ function Mobile() {
 ]
   return (
     <>
-      <div className="mobile">
-        <div className="container">
-          <div className="why-img">
-              <img src={imgMobile} alt="img-mobile" />
-          </div>
-          <div className="why-content">
-              <div className="wrapper-content">
-                  <h2 className='title-block'>Why is lottery blockchain?</h2> 
-                  <p className="desc">
-                    Here's mobile look of home page that you will use for blockchain lottery. Your interactive experience, your random number selection idea, your luck!
-                  </p>
-                  <div className="why-list">
-                      {listNote.map((item) => (
-                          <div className="why-item">
-                              <img src='/images/icon.png' alt="icon" />
-                              <span>{item.content}</span>
-                          </div>
-                      ))}
-                  </div>
-                  <Link href="/" className="btn-block btn-primary btn--yellow">try it now</Link>
-              </div>
-          </div>
+      <div className='mobile'>
+        <div className="container-block">
+            <div className="mobile-wrapper general-order1--wrapper">
+                <div className=" general-order1--content">
+                    <div className="wrapper-content">
+                        <h2 className='title-block'>Mobile App</h2> 
+                        <p className="block-desc desc">
+                          Here's mobile look of home page that you will use for blockchain lottery. Your interactive experience, your random number selection idea, your luck!
+                        </p>
+                        <div className="why-list">
+                        {listNote.map((item) => (
+                            <div className="block-item--check">
+                                <img src={imgIcon} alt="icon" />
+                                <span>{item.content}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <Link href="/" className="btn-block btn-primary btn--yellow">TRY IT NOW</Link>
+                    </div>
+                </div>
+                <div className="mobile-img general-order1--img">
+                    <img src={imgMobile} alt="img-platform" /> 
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     </>
   );
 }

@@ -18,7 +18,7 @@ function Banner() {
                         </a>
                     </div>
                     <div className="banner-img">
-                        <img src={imgBanner} alt="img-banner" />
+                        <img src={imgBanner} alt="img-banner" className="img-fluid" />
                 </div>
                 </div>
             </div>

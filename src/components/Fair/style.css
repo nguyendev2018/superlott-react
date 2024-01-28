@@ -1,24 +1,19 @@
 .fair{
-    padding-top: 162px;
-    padding-bottom: 98px;
+    /* padding-top: 162px;
+    padding-bottom: 98px; */
 }
 
 .fair-wrapper{
     position: relative;
-    display: flex;
-    gap: 120px;
-    justify-content: space-between;
-
+    padding-top: 162px;
+    padding-bottom: 68px;
 }
-.title-block {
-   
+.fair-img {
+    background-image: url('./img/bg-img.png');
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-.fair-content{
-    max-width: 40%;
-    width: 100%;
-}
-
-
 .fair-play{
    display: flex;
    gap: 20px;
@@ -45,26 +40,8 @@
 
 .fair-img .desktop {
     display: block;
+    height: auto;
 }
 .fair-img .mobile {
     display: none;
-}
-
-@media screen and (max-width: 801px){
-    .fair-img {
-        position: unset;
-    }
-    .fair-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .fair-content,.fair-img{
-        max-width: 100%;
-    }
-    .fair-img .mobile {
-        display: block;
-    }
-    .fair-img .desktop {
-        display: none;
-    }
 }

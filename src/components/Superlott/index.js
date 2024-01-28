@@ -49,10 +49,13 @@ const itemSuperlott = [
             <div className="superlott-wrapper">
                 {itemSuperlott.map((item) => (
                     <Link to={`/${item.link}`} className="superlott-item" key={item.id}>
-                    <div className="superlott-img">
-                        <img src={item.img} alt="logo-partner" />
+                    <div className="superlott-item--general">
+                        <div className="superlott-img">
+                            <img src={item.img} alt="logo-partner" className='img-fluid' />
+                        </div>
+                        <span>{item.name}</span>
                     </div>
-                    <span>{item.name}</span>
+                    
                 </Link>
                 ))}
             </div>

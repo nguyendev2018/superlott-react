@@ -22,12 +22,6 @@
 .revenue-item img{
     object-fit: cover;
 }
-.revenue-token{
-    position: relative;
-    background-image: url('./img/gradient-1.png');
-    background-size:cover ;
-    background-repeat:no-repeat ;
-}
 @media screen and (max-width: 1260px){
     .revenue-item p {
         font-size: 25px;
@@ -38,8 +32,11 @@
     }
 }
 @media screen and (max-width: 801px){
-    .revenue-item p {
-        font-size: 16px;
+    .revenue-wrapper {
+        flex-direction: column;
+    }
+    .revenue-item{
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 551px){

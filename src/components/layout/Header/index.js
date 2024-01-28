@@ -23,7 +23,7 @@ function Header() {
             {/* <div className={`has-previewMenuOpened ${showMenu && "is-active"}`}></div> */}
           </div>
           <Link to={`${path.HOME}`} className="logo">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="img-fluid" />
           </Link>
           <ul className={`list-menu ${showMenu && "is-active"}`}>
             {navigation.map((item) => (

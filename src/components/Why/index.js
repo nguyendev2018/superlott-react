@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import imgIcon from "./img/img-icon.png";
+import imgIcon from "../Icon/icon.png";
 import imgWhy from "./img/img-why.png";
 import { Link } from 'react-router-dom';
 function Why() {
@@ -28,20 +28,19 @@ function Why() {
     ]
   return (
     <div className='why'>
-        <div className="container-block">
-            <div className="why-wrapper">
-            <div className="why-img">
+                <div className="container-block">
+                <div className="why-wrapper general-order2--wrapper">
+                <div className="why-img general-order2--img">
                 <img src={imgWhy} alt="img-why" />
             </div>
-            <div className="why-content">
-                <div className="wrapper-content">
+            <div className="why-content general-order2--content">
                     <h2 className='title-block'>Why is lottery blockchain?</h2> 
                     <p className="block-desc desc">
                         We’re building the global equity blockchain platform – that is secure, smart and easy-to-use platform, and completely change the way that the player buy and share tickets. That is a decentralized lottery platform on blockchain It's: Fair - validate - true
                     </p>
                     <div className="why-list">
                         {listNote.map((item) => (
-                            <div className="why-item">
+                            <div className="block-item--check">
                                 <img src={imgIcon} alt="icon" />
                                 <span>{item.content}</span>
                             </div>
@@ -50,8 +49,7 @@ function Why() {
                     <Link href="/" className="btn-block btn-primary btn--yellow">get started</Link>
                 </div>
             </div>
-            </div>
-        </div>
+                </div>
     </div>
   )
 }
