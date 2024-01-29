@@ -34,9 +34,13 @@
 @media screen and (max-width: 801px){
     .revenue-wrapper {
         flex-direction: column;
+        
     }
     .revenue-item{
         max-width: 100%;
+    }
+    .revenue-wrapper{
+        gap: 70px;
     }
 }
 @media screen and (max-width: 551px){

@@ -11,10 +11,9 @@ import icon9 from "./img/9.svg";
 function Roadmap() {
   return (
     <>
-      <div className="nk-block ov-h">
+      <div className="roadmap">
       <h2>Roadmap</h2>
-      <div className="container">
-        <div className="row">
+      <div className="container-block">
           <div className="roadmap-content">
             <div className="roadmap-slider-trumb" />
             <div id="roadmap-slider-circle">
@@ -277,10 +276,8 @@ function Roadmap() {
               </div>
             </div>
           </div>
-        </div>
       </div>
-</div>
-
+      </div>
     </>
   );
 }

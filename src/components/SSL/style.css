@@ -3,9 +3,10 @@
     src: url('./fonts/SpaceGrotesk-Regular.ttf');
   }
 .spl{
-    background-image: url('./img/bg-spl-minning.png');
+    padding-bottom: 178px;
+    /* background-image: url('./img/bg-spl-minning.png');
     background-size:cover ;
-    background-repeat:no-repeat ;
+    background-repeat:no-repeat ; */
 }
 .container{
 
@@ -16,6 +17,7 @@
 .spl-img{
 
 }
+
 .spl-content h2{
     text-align: left;
 }
@@ -85,4 +87,17 @@ text-transform: uppercase;
 }
 .right{
 
+}
+@media screen and (min-width:802px) {
+    .spl-content{
+        padding-top: 63px;
+    }
+}
+@media screen and (max-width: 1260px){
+.spl {
+    padding-bottom: 150px;
+}
+.spl-item{
+    gap: 50px;
+}
 }

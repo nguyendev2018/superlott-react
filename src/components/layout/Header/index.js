@@ -16,15 +16,15 @@ function Header() {
     <>
       <nav>
         <div className="container nav-container">
+          
+          <Link to={`${path.HOME}`} className="logo">
+            <img src={logo} alt="logo" className="img-fluid" />
+          </Link>
           <div className="menu-mobile" data-mobile-menu-toggle="menu">
             <div className={` icon-bar ${showMenu && "is-active"}`} onClick={handleShowNavbar}>
               <span className="icon-barChild"></span>
             </div>
-            {/* <div className={`has-previewMenuOpened ${showMenu && "is-active"}`}></div> */}
           </div>
-          <Link to={`${path.HOME}`} className="logo">
-            <img src={logo} alt="logo" className="img-fluid" />
-          </Link>
           <ul className={`list-menu ${showMenu && "is-active"}`}>
             {navigation.map((item) => (
               <li key={item.id}>
@@ -36,10 +36,15 @@ function Header() {
                 </NavLink>
               </li>
             ))}
+            <li className="btn-header--tablet">
+            <Link to="/" className='btn-default btn--yellow'>REWARD</Link>
+            </li>
           </ul>
-          <Link to="/" className="btn-header btn-default btn--yellow">REWARD</Link>
+          <Link to="/" className="btn-header--desktop btn-default btn--yellow">REWARD</Link>
         </div>
       </nav>
+      <div className={`has-previewMenuOpened ${showMenu && "is-active"}`} onClick={handleShowNavbar}></div>
+
     </>
   );
 }

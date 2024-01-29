@@ -1,6 +1,7 @@
 import "./style.css";
 import imgHow from "./img/img-how.png";
 import icon from "../Icon/icon.png";
+import iconPurple from "../Icon/icon-purple.png"
 import imgSupper from "./img/img-supper.png"
 import { Link } from "react-router-dom";
 function How() {
@@ -125,10 +126,10 @@ function How() {
             <h2>How to play</h2>
             <div className="container-block">
               <div className="how-wrapper">
-                <div className="how-block--img">
-                  <img src={imgHow} alt="img-how" />
+                <div className="how-block--left img-how">
+                  <img src={imgHow} alt="img-how"/>
                 </div>
-                <div className="how-block--content">
+                <div className="how-block--content ">
                   <h3>Megalott</h3>
                   <p className="desc how-block--desc">
                     Ticket price 1$. The 6 numbers from 01 -45 for one in 3 times lottery prize (Monday, Wednesday, Friday) at 20:30 pm UTC+0
@@ -147,7 +148,7 @@ function How() {
                 </div>
               </div>
               <div className="how-wrapper how-wrapper--win">
-                <div className="how-list--win">
+                <div className="how-list--check how-block--left">
                   <h4>How to play and win the Megalott?</h4>
                   {winMega.map((item) => (
                       <div className="how-item--check">
@@ -163,15 +164,15 @@ function How() {
                           {item.text}
                         </p>
                       ))}
-                      <div className="desc how-block--desc">
+                      <p className="desc how-block--desc">
                         Haven’t found what you’re looking for? <Link to="/">Contact us</Link>
-                      </div>
+                      </p>
                   </div>
                 </div>
               </div>
               <div className="how-wrapper">
-                <div className="how-block--content">
-                  <h3>Megalott</h3>
+                <div className="how-block--content how-list--check">
+                  <h3>Superlott</h3>
                   <p className="desc how-block--desc">
                     Ticket price 1$. The 6 numbers from 01 -45 for one in 3 times lottery prize (Monday, Wednesday, Friday) at 20:30 pm UTC+0
                   </p>
@@ -179,24 +180,24 @@ function How() {
                     Total of 4 prizes with starting prize $200,000
                   </p>
                   <div className="how-list">
-                  {howList.map((item) => (
+                  {listSuper.map((item) => (
                       <div className="how-item--check">
-                          <img src={icon} alt="icon" />
+                          <img src={iconPurple} alt="icon" />
                           <span>{item.text}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="how-block--img">
-                  <img src={imgHow} alt="img-how" />
+                <div className="how-block--left img-how">
+                  <img src={imgSupper} alt="img-how" />
                 </div>
               </div>
               <div className="how-wrapper how-wrapper--win">
-                <div className="how-list--win">
-                  <h4>How to play and win the Megalott?</h4>
-                  {winMega.map((item) => (
+                <div className="how-list--check how-block--left">
+                  <h4>How to play and win the Superlott ?</h4>
+                  {listSuperCheck.map((item) => (
                       <div className="how-item--check">
-                          <img src={icon} alt="icon" />
+                          <img src={iconPurple} alt="icon" />
                           <span>{item.text}</span>
                       </div>
                     ))}
@@ -208,9 +209,9 @@ function How() {
                           {item.text}
                         </p>
                       ))}
-                      <div className="desc how-block--desc">
+                      <p className="desc how-block--desc">
                         Haven’t found what you’re looking for? <Link to="/">Contact us</Link>
-                      </div>
+                      </p>
                   </div>
                 </div>
               </div>

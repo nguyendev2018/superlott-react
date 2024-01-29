@@ -28,9 +28,9 @@ function Mobile() {
 ]
   return (
     <>
-      <div className='mobile'>
+      <div className='mobile content-padding'>
         <div className="container-block">
-            <div className="mobile-wrapper general-order1--wrapper">
+            <div className="mobile-wrapper general-wrapper general-order1--wrapper">
                 <div className=" general-order1--content">
                     <div className="wrapper-content">
                         <h2 className='title-block'>Mobile App</h2> 

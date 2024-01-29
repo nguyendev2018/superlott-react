@@ -39,13 +39,13 @@ function SPL() {
   ];
   return (
     <div className="spl">
-      <div className="spl-container container-block">
-        <div className="general-order2--wrapper">
+      <div className="container-block">
+        <div className="general-wrapper general-order2--wrapper">
         <div className="spl-img general-order2--img">
               <img src={imgBanner} alt="img-banner" />
           </div>
           <div className="spl-content general-order2--content">
-            <h2>SPL Minning</h2>
+            <h2 className="title-block">SPL Minning</h2>
             <p className=" block-desc desc">
               The sub-title will be here
             </p>

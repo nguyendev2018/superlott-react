@@ -1,12 +1,10 @@
-.fair{
-    /* padding-top: 162px;
-    padding-bottom: 98px; */
-}
 
 .fair-wrapper{
     position: relative;
-    padding-top: 162px;
-    padding-bottom: 68px;
+   
+}
+.fair-content{
+    padding-top: 95px;
 }
 .fair-img {
     background-image: url('./img/bg-img.png');
@@ -44,4 +42,14 @@
 }
 .fair-img .mobile {
     display: none;
+}
+@media screen and (max-width: 1260px){
+    .fair-content{
+        padding-top: 70px;
+    }
+}
+@media screen and (max-width: 801px){
+    .fair-content{
+        padding-top: 0px;
+    }
 }

@@ -58,7 +58,7 @@ function Our() {
   ];
   return (
     <>
-      <div className="our">
+      <div className="our content-padding">
         <h2>Our Code Services</h2>
         <div className="container container-block">
           <div className="our-list">

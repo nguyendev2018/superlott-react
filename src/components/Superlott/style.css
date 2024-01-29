@@ -1,20 +1,20 @@
 @font-face {
     font-family: soraBold;
     src: url(./fonts/Sora-Bold.ttf);
-  }
-.superlott{
-    padding-bottom: 35px;
 }
+
 .superlott-wrapper{
-    margin-top: 78px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
 }
 .superlott-item{
    display: inline-block;
    text-decoration: none;
    flex: 1;
+    max-width: 16.7%;
+    width: 100%;
 }
 .superlott-item--general{
     display: flex;
@@ -34,21 +34,32 @@
     height: 40px;
     display: block;
 }
+@media screen and (max-width: 992px){
+    .superlott-item{
+        max-width: 25%;
+    }
+}
 @media screen and (max-width : 801px) {
     .superlott-wrapper {
         margin-top: 40px;
-        padding-bottom: 40px;
     }
     .superlott-item > span {
         font-size: 20px;
     }
+  
 }
 @media screen and (max-width : 551px) {
     .superlott-wrapper {
         margin-top: 30px;
-        padding-bottom: 30px;
+        gap: 50px;
     }
     .superlott-item > span {
         font-size: 16px;
+    }
+    .superlott-item{
+        max-width: 50%;
+    }
+    .superlott-item--general > span{
+        font-size: 20px;
     }
 }

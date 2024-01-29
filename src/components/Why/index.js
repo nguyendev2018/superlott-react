@@ -27,9 +27,9 @@ function Why() {
         }
     ]
   return (
-    <div className='why'>
+    <div className='why content-padding'>
                 <div className="container-block">
-                <div className="why-wrapper general-order2--wrapper">
+                <div className="why-wrapper general-wrapper general-order2--wrapper">
                 <div className="why-img general-order2--img">
                 <img src={imgWhy} alt="img-why" />
             </div>

@@ -1,3 +1,12 @@
+.roadmap{
+    background-image: url('./img/bg-roadmaps.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
 .roadmap-content {
   width: 100%;
   padding-top: 200px;
@@ -15,11 +24,7 @@
   height: 4px;
   background-color: #00e4ff;
   position: relative;
-  -webkit-box-shadow: 0 0 6px 1px #00e4ff;
-  -moz-box-shadow: 0 0 6px 1px #00e4ff;
   box-shadow: 0 0 6px 1px #00e4ff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px
 }
 
@@ -31,16 +36,12 @@
   top: 0;
   position: absolute;
   margin-left: -8px;
-  margin-top: -19px;
+  margin-top: -14px;
   width: 16px;
   height: 16px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: #00e4ff;
   border: 4px solid #000;
-  -webkit-box-shadow: 0 0 6px 2px #00e4ff;
-  -moz-box-shadow: 0 0 6px 2px #00e4ff;
   box-shadow: 0 0 6px 2px #00e4ff
 }
 
@@ -59,30 +60,10 @@
   line-height: 2
 }
 
-#roadmap-slider-circle .data_cir-content>span {
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
+#roadmap-slider-circle .data_cir-content>span { 
   display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
   flex-direction: column;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
   justify-content: center
 }
 
@@ -101,28 +82,16 @@
 }
 #roadmap-slider-circle .data_cir:nth-child(2n+1) .data_cir-content {
   bottom: 44px;
-  -webkit-transform: translateY(-100%) translateX(-18%);
-  -ms-transform: translateY(-100%) translateX(-18%);
-  -moz-transform: translateY(-100%) translateX(-18%);
-  -o-transform: translateY(-100%) translateX(-18%);
   transform: translateY(-100%) translateX(-18%)
 }
 
 #roadmap-slider-circle .data_cir:nth-child(2n) .data_cir-content {
   top: 55px;
-  -webkit-transform: translateX(-18%);
-  -ms-transform: translateX(-18%);
-  -moz-transform: translateX(-18%);
-  -o-transform: translateX(-18%);
   transform: translateX(-18%)
 }
 
 #roadmap-slider-circle .data_cir:nth-child(2n) .data_cir-content .roadmap_img {
-  -ms-order: -1;
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  -webkit-order: -1;
-  -moz-box-ordinal-group: 0;
+
   order: -1
 }
 
@@ -146,8 +115,6 @@
   left: -14px;
   opacity: .2;
   width: 45%;
-  height: -webkit-calc(100% + 37px);
-  height: -moz-calc(100% + 37px);
   height: calc(100% + 37px)
 }
 
@@ -174,29 +141,11 @@
 #roadmap-slider-circle .data_cir .data_cir-content .roadmap_img {
   width: 50px;
   height: 50px;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
   justify-content: center;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
   align-items: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid #00e4ff;
-  -webkit-box-shadow: 0 0 6px 1px rgba(0, 228, 255, .5);
-  -moz-box-shadow: 0 0 6px 1px rgba(0, 228, 255, .5);
   box-shadow: 0 0 6px 1px rgba(0, 228, 255, .5)
 }
 
@@ -208,7 +157,6 @@
   width: 1px;
   height: 40px;
   background-color: #00e4ff;
-  left: -webkit-calc(50% - 1px);
   left: -moz-calc(50% - 1px);
   left: calc(50% - 1px)
 }
@@ -230,10 +178,6 @@
   font-size: 12px;
   left: 0;
   text-align: center;
-  -webkit-transform: translateX(-35%);
-  -ms-transform: translateX(-35%);
-  -moz-transform: translateX(-35%);
-  -o-transform: translateX(-35%);
   transform: translateX(-35%)
 }
 
@@ -252,20 +196,17 @@
 #roadmap-slider-circle .data_cir.next {
   background-color: #000;
   border: 4px solid #000;
-  -webkit-box-shadow: 0 0 6px 2px #00e4ff;
-  -moz-box-shadow: 0 0 6px 2px #00e4ff;
   box-shadow: 0 0 6px 2px #00e4ff
 }
 @media (max-width: 992px){
+  .roadmap {
+    background-image: none;
+  }
   .roadmap-slider-trumb {
       width: 4px;
-      height: -webkit-calc(100% - 4px);
-      height: -moz-calc(100% - 4px);
       height: calc(100% - 4px);
       top: 4px;
       position: absolute;
-      left: -webkit-calc(45vw + 8px);
-      left: -moz-calc(45vw + 8px);
       left: calc(45vw + 8px);
   }
   .roadmap-content {
@@ -277,13 +218,9 @@
   }
   #roadmap-slider-trumb {
       width: 4px;
-      height: -webkit-calc(100% - 4px);
-      height: -moz-calc(100% - 4px);
       height: calc(100% - 4px);
       top: 4px;
       position: absolute;
-      left: -webkit-calc(45vw + 8px);
-      left: -moz-calc(45vw + 8px);
       left: calc(45vw + 8px);
   }
   #roadmap-slider-circle{
@@ -294,8 +231,6 @@
       margin-bottom: 150px;
       position: relative;
       left: 0!important;
-      margin-left: -webkit-calc(45vw + -13px);
-      margin-left: -moz-calc(45vw + -13px);
       margin-left: calc(45vw + -13px);
   }
   #roadmap-slider-circle .data_cir:last-child{
@@ -310,10 +245,6 @@
   }
   #roadmap-slider-circle .data_cir-content {
       margin-left: 60px;
-      -webkit-transform: translateY(0)!important;
-      -ms-transform: translateY(0)!important;
-      -moz-transform: translateY(0)!important;
-      -o-transform: translateY(0)!important;
       transform: translateY(0)!important;
       top: 0!important;
       bottom: 0!important;
@@ -328,30 +259,12 @@
       display: none;
   }
   #roadmap-slider-circle .data_cir:first-child .data_cir-content>span {
-  -webkit-transform: none!important;
-  -ms-transform: none!important;
-  -moz-transform: none!important;
-  -o-transform: none!important;
   transform: none!important;
   text-align: left;
 }
 #roadmap-slider-circle .data_cir-content>span {
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
   display: flex;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
   align-items: center;
   height: auto;
 }
@@ -362,26 +275,21 @@
   left: auto;
   right: 55px;
   padding: 5px 7px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
   border-radius: 50px;
   top: 4px!important;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   border: 1px solid #00e4ff;
 }
 #roadmap-slider-circle .data_cir::after {
   width: 70px;
 }
-
-
-
-
 }
-
+@media screen and (max-width: 1260px){
+  .roadmap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 @media(max-width:767px){
   #roadmap-slider-circle .data_cir{
       margin-left:calc(5vw + -11px)
@@ -402,8 +310,5 @@
   }
   #roadmap-slider-circle .data_cir-content{
       transform: translate(0%, 70%)!important;
-  }
-  .roadmap{
-      padding-bottom: 200px;
   }
 }

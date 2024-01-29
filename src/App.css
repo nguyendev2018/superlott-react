@@ -3,19 +3,6 @@
   --yellow : #F9D54A;
   --black : #161616;
 }
-body {
-  font-family: interRegular;
-  background: #0E0C15;
-  color: white;
-}
-body:has(ul.is-active) {
-  overflow: hidden;
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 @font-face {
   font-family: interBold;
   src: url(./assets/fonts/Inter-Bold.ttf);
@@ -32,6 +19,20 @@ body:has(ul.is-active) {
   font-family: interRegular;
   src: url(./assets/fonts/Inter-Regular.ttf);
 }
+body {
+  font-family: interRegular;
+  background: #0E0C15;
+  color: white;
+}
+body:has(ul.is-active) {
+  overflow: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .img-section{
   position: absolute;
@@ -46,15 +47,15 @@ h3{
 }
 h4 {
   font-size: 32px;
-  font-family: interRegular;
+  font-weight: 400;
 }
-.general-section {
+.general-section,.general-section2 {
   width: 100%;
   height: 100%;
  
   position: relative;
 }
-.general-section::after {
+.general-section::after,.general-section2::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -68,8 +69,13 @@ h4 {
   height: 100%;
   z-index: -1;
 }
-
-
+.general-section2::after{
+  background-image: url('./components/SSL/img/bg-spl-minning.png');
+  height: calc(100% - 37%);
+}
+.general-section2{
+  position: relative;
+}
 h1{
   font-size: 60px;
   font-family: interSemiBold;
@@ -80,9 +86,11 @@ h2{
   font-family: interSemiBold;
   text-align: center;
   margin-bottom: 80px;
+  line-height: 1.2;
 }
 h2.title-block {
   text-align: left;
+  margin-bottom: 32px;
 
 }
 p.desc {
@@ -119,6 +127,10 @@ img.img-fluid {
 .content-padding--right {
   padding-right: 160px;
 }
+.content-padding {
+  padding-top: 162px;
+  padding-bottom: 68px;
+}
 .btn-block{
   margin-top: 64px;
 }
@@ -127,9 +139,9 @@ img.img-fluid {
   margin-bottom:40px;
 }
 /* general-order1--wrapper */
-.general-order1--wrapper{
+.general-wrapper {
   display: flex;
-  gap: 100px;
+  gap: 120px;
   justify-content: space-between;
 }
 .general-order1--content{
@@ -137,11 +149,6 @@ img.img-fluid {
   width: 100%;
 }
 /* general-order2--img */
-.general-order2--wrapper {
-  display: flex;
-  gap: 120px;
-  justify-content: space-between;
-}
 .general-order2--img{
   max-width: 60%;
   width: 100%;
@@ -152,19 +159,33 @@ img.img-fluid {
   max-width: 40%;
   width: 100%;
 }
+.spacing-padding {
+  padding-bottom: 178px;
+}
 @media screen and (max-width: 551px){
  
   
 }
 @media screen and (max-width: 1260px) {
+  h2{
+    margin-bottom: 50px;
+    font-size: 38px;
+  }
+  .content-padding{
+     padding-top: 130px;
+  }
+  .general-section2::after{
+    height: calc(100% - 50%);
+}
   
 }
 @media screen and (max-width: 801px){
   h2 {
     font-size: 38px;
+    margin-bottom: 50px;
   }
-  .general-order1--wrapper{
-    gap: 50px;
+  .general-wrapper{
+    gap: 75px;
     flex-direction: column-reverse;
   }
   .general-order1--content{
@@ -185,23 +206,27 @@ img.img-fluid {
   .general-order2--wrapper {
     flex-direction: column;
   } 
+  .content-padding{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }
 @media screen and (max-width: 551px) {
   h1{
     font-size: 30px;
   }
-  h2 {
-    font-size: 28px;
+
+  h2{
+    font-size: 30px;
   }
-}
-@media screen and (min-width: 551px) { 
+  .general-wrapper{
+    gap: 50px;
+  }
 
-}
-@media screen and (min-width: 801px) { 
-
-}
-@media screen and (min-width: 1261px) { 
-
+  .content-padding{
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
 .btn-default, .btn-primary {
   padding: 14px 40px;
@@ -211,6 +236,9 @@ img.img-fluid {
   font-family:interBold;
   color: black;
   display: inline-block;
+}
+.btn-default:hover, .btn-primary:hover {
+  opacity: 0.8;
 }
 .btn-primary {
   padding: 18px 24px;

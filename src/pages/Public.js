@@ -15,10 +15,14 @@ const Public = () => {
         <SuperLott/>
         <Fair/> 
         </div>
+       
       <Why/>
     <Mobile/>
+    <div className="general-section2 content-padding">
     <SSL/>
       <Revenue/>
+    </div>
+   
        <Our/>
        <How/>
        <Roadmap/>
