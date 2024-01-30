@@ -52,7 +52,6 @@ h4 {
 .general-section,.general-section2 {
   width: 100%;
   height: 100%;
- 
   position: relative;
 }
 .general-section::after,.general-section2::after {
