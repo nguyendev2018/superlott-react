@@ -1,51 +1,21 @@
-import React from "react";
+import React, {useRef} from 'react';
 import "./style.css";
-import axios from "axios";
-import { useForm } from "react-hook-form";
+import { useForm, isSubmitting } from "react-hook-form";
 import { IoClose } from "react-icons/io5";
-import apiContact from "../../api/contact"
+import emailjs from '@emailjs/browser';
+
 function Contact() {
-  const { register, handleSubmit, formState: { errors,isSubmitting } } = useForm();
-  const onSubmit = async (e) => {
-    try {
-      const client = require("@mailchimp/mailchimp_marketing");
+  const formRef = useRef();
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
 
-      client.setConfig({
-      apiKey: "YOUR_API_KEY",
-      server: "YOUR_SERVER_PREFIX",
+  const onSubmit = (data) => {
+    emailjs.sendForm('service_rf54yda', 'template_54js2sk', formRef.current, 'GgVIh713sY_zz_rPJ')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
       });
-
-      const run = async () => {
-      const response = await client.lists.addListMember("c220c4dce8", {
-        email_address: "Ebony_Brekke@gmail.com",
-        status: "pending",
-      });
-      console.log(response);
-      };
-
-      run();
-      const response = await axios.post('https://us21.api.mailchimp.com/3.0/lists/c220c4dce8', {
-        email_address : 'ngiyr',
-        status : "subscribed",
-        // merge_fields : {
-        //   message : mess,
-        //   name : name
-        // }
-        
-      }, {
-        headers: {
-          'Authorization': 'auth 31ea5ab599dd4f5778bd6f8f4db244ab-us21',
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin' : '*',
-          'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-        }
-      });
-      console.log(response);
-      console.log('Successfully subscribed to Mailchimp', response.data);
-    } catch (error) {
-      console.error('Failed to subscribe to Mailchimp', error);
-    }
-  }
+  };
 
   return (
     <>
@@ -54,34 +24,38 @@ function Contact() {
           <h2>Contact us</h2>
           <p className="desc desc-contact">Any question? Reach out to us and we’ll get back to you shortly.</p>
           <p className="desc-admin">admin@superlott.io</p>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              {...register("Name", { required: "Please enter your name" })}
+              name = "user_name"
+              {...register("user_name", { required: "Please enter your name" })}
               className="form-input"
               placeholder="Your Name"
             />
-            {errors.Name && <p className="error-message"><IoClose /> {errors.Name.message}</p>}
+            {errors.user_name && <p className="error-message"><IoClose /> {errors.user_name.message}</p>}
             <input
               type="email"
-              {...register("Email", { required: "Please enter your email" })}
+              name="user_email"
+              {...register("user_email", { required: "Please enter your email" })}
               className="form-input"
               placeholder="Your Email"
             />
-            {errors.Email && <p className="error-message"><IoClose /> {errors.Email.message}</p>}
+            {errors.user_email && <p className="error-message"><IoClose /> {errors.user_email.message}</p>}
             <textarea
-              rows="2"
-              {...register("Mess", { required: "Please enter your message", maxLength: 20 })}
-              cols="5"
+              rows="5"
+              name="message"
+              {...register("message", { required: "Please enter your message", maxLength: 20 })}
+              cols="10"
               className="form-input"
               placeholder="Your Message"
             />
-            {errors.Mess && <p className="error-message"><IoClose /> {errors.Mess.message}</p>}
+            {errors.message && <p className="error-message"><IoClose /> {errors.message.message}</p>}
 
             <input
               type="submit"
               className="button-submit btn-contact"
-              value={'submit'} disabled={isSubmitting}
+              value={'Submit'}
+              disabled={isSubmitting}
             />
           </form>
         </div>
