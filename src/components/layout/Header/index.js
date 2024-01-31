@@ -2,7 +2,6 @@ import { navigation } from "../../../utils/contants";
 import path from "../../../utils/path";
 import "./style.css";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 import logo from "../../../assets/img/logo.png";
 import { useState } from "react";
 

@@ -1,5 +1,6 @@
 import "./style.css";
 import imgBanner from "./img/img-banner.png"
+import { Link } from "react-router-dom";
 function Banner() {
     return (
         <>
@@ -10,12 +11,12 @@ function Banner() {
                         Global decentralize network to buy & share lottery ticket easily
                     </p>
                     <div className="banner-buttons">
-                        <a href="#" className="btn-primary btn-contact">
+                        <Link to="#" className="btn-primary btn-contact">
                             Contact To Join
-                        </a>
-                        <a href="#" className="btn-primary btn-sql">
+                        </Link>
+                        <Link to="#" className="btn-primary btn-sql">
                             SPL DISTRIBUTION
-                        </a>
+                        </Link>
                     </div>
                     <div className="banner-img">
                         <img src={imgBanner} alt="img-banner" className="img-fluid" />

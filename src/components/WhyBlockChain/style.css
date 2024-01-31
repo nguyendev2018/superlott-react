@@ -1,14 +1,12 @@
-
 .why {
     background-image: url('./img/bg-why.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.block-item--check{
+.block-item--check {
     display: flex;
     gap: 22px;
-
 }
 .block-item--check + .block-item--check {
     margin-top: 36px;

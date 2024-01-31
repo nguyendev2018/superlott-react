@@ -3,7 +3,7 @@ import imgMobile from "./img/img-mobile.png";
 import imgIcon from "../Icon/icon.png";
 import { Link } from "react-router-dom";
 
-function Mobile() {
+function MobileApp() {
   const listNote = [
     {
         id : '1',
@@ -57,4 +57,4 @@ function Mobile() {
     </>
   );
 }
-export default Mobile;
+export default MobileApp;

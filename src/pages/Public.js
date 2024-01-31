@@ -3,17 +3,17 @@ import {
     Header,
     Banner,
     SuperLott,
-    Fair,
     Roadmap,
-    Mobile,
-    SSL,
-    How,
+    MobileApp,
+    WhyBlockChain,
+    SPLMinning,
+    RevenueStructure,
+    OurServices,
+    Contact,
+    Footer,
+    FairPlatform,
+    HowToPlay,
 } from '../components';
-import Why from '../components/Why';
-import Revenue from '../components/Revenue';
-import Contact from '../components/Contact';
-import Footer from '../components/layout/Footer';
-import Our from '../components/Our';
 const Public = () => {
     return (
         <>
@@ -21,16 +21,16 @@ const Public = () => {
             <div className="general-section">
                 <Banner />
                 <SuperLott />
-                <Fair />
+                <FairPlatform />
             </div>
-            <Why />
-            <Mobile />
+            <WhyBlockChain />
+            <MobileApp />
             <div className="general-section2 content-padding">
-                <SSL />
-                <Revenue />
+                <SPLMinning />
+                <RevenueStructure />
             </div>
-            <Our />
-            <How />
+            <OurServices />
+            <HowToPlay />
             <Roadmap />
             <Contact />
             <Footer />

@@ -1,4 +1,4 @@
-.contact{
+.contact {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -9,26 +9,26 @@
     text-align: center;
     font-family: interRegular;
 }
-.desc-contact{
+.desc-contact {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 .contact .desc-admin {
-    color: #F1CF49;
+    color: #f1cf49;
     text-transform: uppercase;
     font-size: 14px;
     text-align: center;
     font-family: interBold;
     margin-bottom: 71px;
 }
-.contact-wrapper{
-    max-width:800px;
+.contact-wrapper {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.form-input{
+.form-input {
     background: transparent;
     border: none;
     width: 100%;
@@ -41,7 +41,7 @@
     color: white;
     text-align: center;
 }
-.error-message{
+.error-message {
     margin-top: 15px;
     color: #cd0e0e;
     display: flex;
@@ -55,7 +55,7 @@
 .form-input::placeholder {
     font-size: 16px;
     text-align: center;
-    color: #8C91A2;
+    color: #8c91a2;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,7 +2,7 @@ import React from 'react'
 import token from './img/token.png';
 import bountry from './img/bountry.png';
 import "./style.css"
-const Revenue = () => {
+const RevenueStructure = () => {
   return (
     <div className='revenue'>
         <h2>Revenue Structure</h2>
@@ -22,4 +22,4 @@ const Revenue = () => {
   )
 }
 
-export default Revenue
+export default RevenueStructure

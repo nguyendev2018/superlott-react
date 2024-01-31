@@ -18,21 +18,20 @@ h2.banner-title span {
     position: relative;
 }
 h2.banner-title span::after {
-    content : "";
+    content: '';
     position: absolute;
     bottom: -8px;
     left: 0;
     background-image: url('../Banner/img/vector_text.png');
-    background-size:contain;
-    background-repeat:no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 14px;
 }
 .banner-desc {
     margin-top: 24px;
-    color: #8C91A2;
+    color: #8c91a2;
     font-size: 20px;
-
 }
 .banner-img {
     max-width: 942px;
@@ -48,21 +47,21 @@ h2.banner-title span::after {
     background: white;
 }
 .banner-buttons .btn-sql {
-    background: #F9D54A;
+    background: #f9d54a;
 }
 .banner .banner-contact {
     display: flex;
 }
-@media screen and (max-width: 801px){
-    h2.banner-title{
+@media screen and (max-width: 801px) {
+    h2.banner-title {
         font-size: 45px;
     }
 }
-@media screen and (max-width: 551px){
-    h2.banner-title{
+@media screen and (max-width: 551px) {
+    h2.banner-title {
         font-size: 35px;
     }
-    .banner-buttons .btn-primary{
+    .banner-buttons .btn-primary {
         padding: 14px 20px;
         height: fit-content;
         font-size: 13px;

@@ -11,7 +11,7 @@ import icon3 from "./img/icon-3.png";
 import icon4 from "./img/icon-4.png";
 import icon5 from "./img/icon-5.png";
 import icon6 from "./img/icon-6.png";
-function Our() {
+function OurServices() {
   const listOur = [
     {
       id: "1",
@@ -80,4 +80,4 @@ function Our() {
     </>
   );
 }
-export default Our;
+export default OurServices;

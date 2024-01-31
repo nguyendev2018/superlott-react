@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import imgPlatform from "./img/plaform.png";
 import imgCricle from "./img/circle-button.png";
-function Fair() {
+function FairPlatform() {
   return (
     <div className='fair content-padding'>
         <div className="container-block">
@@ -29,4 +29,4 @@ function Fair() {
   )
 }
 
-export default Fair
+export default FairPlatform

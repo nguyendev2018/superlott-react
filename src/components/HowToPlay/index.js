@@ -4,7 +4,7 @@ import icon from "../Icon/icon.png";
 import iconPurple from "../Icon/icon-purple.png"
 import imgSupper from "./img/img-supper.png"
 import { Link } from "react-router-dom";
-function How() {
+function HowToPlay() {
     const howList = [
       {
         id : 1,
@@ -96,24 +96,6 @@ function How() {
       {
         id : 3,
         text : "Buy a ticket"
-      },
-      {
-        id : 4,
-        text : "You need match numbers follow the prize and win the Jackpot"
-      }
-    ]
-    const winSupper = [
-      {
-        id : 1,
-        text : "If the total amount reaches $2 billion and no winner, It will be divided equally among all players according to the percentage of ticket purchase."
-      },
-      {
-        id : 2,
-        text : "Tickets purchased during the week will be valid for the entire week from the time of purchase. Players can use it to participate in the draw for the rest of the week."
-      },
-      {
-        id : 3,
-        text : "If there is more than one winning ticket the prize will be divided equally among those tickets."
       },
       {
         id : 4,
@@ -221,4 +203,4 @@ function How() {
     );
 }
 
-export default How;
+export default HowToPlay;

@@ -68,13 +68,6 @@ h4 {
   height: 100%;
   z-index: -1;
 }
-.general-section2::after{
-  background-image: url('./components/SSL/img/bg-spl-minning.png');
-  height: calc(100% - 37%);
-}
-.general-section2{
-  position: relative;
-}
 h1{
   font-size: 60px;
   font-family: interSemiBold;

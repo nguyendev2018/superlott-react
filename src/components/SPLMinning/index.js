@@ -2,7 +2,7 @@ import "./style.css";
 import imgBanner from "./img/img-ssl.png";
 import vectorLeft from "./img/vector-left.png";
 import vectorRight from "./img/vector-right.png";
-function SPL() {
+function SPLMinning() {
   const listNoteLeft = [
     {
       id: 1, 
@@ -81,10 +81,9 @@ function SPL() {
             </div>
           </div>
         </div>
-          
       </div>
     </div>
   );
 }
 
-export default SPL;
+export default SPLMinning;

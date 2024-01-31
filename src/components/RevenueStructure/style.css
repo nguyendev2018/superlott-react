@@ -1,4 +1,4 @@
-.revenue-wrapper{
+.revenue-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 300px;
@@ -19,31 +19,29 @@
     font-family: interMedium;
     text-align: center;
 }
-.revenue-item img{
+.revenue-item img {
     object-fit: cover;
 }
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 1260px) {
     .revenue-item p {
         font-size: 25px;
-
     }
-    .revenue-wrapper{
+    .revenue-wrapper {
         gap: 100px;
     }
 }
-@media screen and (max-width: 801px){
+@media screen and (max-width: 801px) {
     .revenue-wrapper {
         flex-direction: column;
-        
     }
-    .revenue-item{
+    .revenue-item {
         max-width: 100%;
     }
-    .revenue-wrapper{
+    .revenue-wrapper {
         gap: 70px;
     }
 }
-@media screen and (max-width: 551px){
+@media screen and (max-width: 551px) {
     .revenue-wrapper {
         gap: 30px;
     }

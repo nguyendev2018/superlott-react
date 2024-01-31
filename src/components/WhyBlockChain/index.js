@@ -3,7 +3,7 @@ import './style.css';
 import imgIcon from '../Icon/icon.png';
 import imgWhy from './img/img-why.png';
 import { Link } from 'react-router-dom';
-function Why() {
+function WhyBlockChain() {
     const listNote = [
         {
             id: '1',
@@ -66,4 +66,4 @@ function Why() {
     );
 }
 
-export default Why;
+export default WhyBlockChain;
