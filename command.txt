@@ -1,0 +1,19 @@
+npx stylelint "**/*.scss"
+npx stylelint "**/*.scss" --fix
+mkdocs serve
+add svg 
+/*autoprefixer: off*/
+NOTE SETTING BIGECOMMERCE : Turn on Review
+Settings => Comments => Turn off Only accept product reviews from past customers
+ 
+COMMAND : npx grunt svgstore
+
+<svg><use xlink:href="#icon-star"></use></svg>
+Cách làm mất màu mặc định nhớ bỏ fill="none"
+remove 
+<defs>
+<clipPath id="clip0_11_715">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip0_11_715)"></g>

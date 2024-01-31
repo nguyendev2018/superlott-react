@@ -103,7 +103,6 @@ function HowToPlay() {
       }
     ]
     return (
-        <>
           <div className="how">
             <h2>How to play</h2>
             <div className="container-block">
@@ -199,7 +198,6 @@ function HowToPlay() {
               </div>
             </div>
           </div>
-        </>
     );
 }
 

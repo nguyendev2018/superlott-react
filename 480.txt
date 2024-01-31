@@ -1,0 +1,55 @@
+SKU :K0
+
+Description
+
+Description : custom tab
+
+<div data-custom-tab="">
+<p data-custom-tab-title="">Custom tab</p>
+<div>
+<h4>Product Details</h4>
+<ul>
+<li>Is Discontinued By Manufacturer: No</li>
+<li>Product Dimensions: 24 x 16 x 2 inches</li>
+<li>Item model number: 6754</li>
+<li>Date First Available: ‎ August 21, 2014<br /><br /></li>
+</ul>
+<p>Manufacturer: Legendary Whitetails</p>
+</div>
+</div>
+
+Video : 
+ 
+Variant Options : 
+
+Warranty
+
+2 months
+
+
+Tick show condition on storefront
+
+Pricing:
+Bulk Pricing
+
+Custom Fields :
+ 
+Furniture 2023
+__badge Sale Off
+__alsobought 566
+__countdown_label FLASH SALES|ENDS IN
+__countdown_date 17:00:00-7
+__guide_popup Instruction|/instruction/
+
+
+related products
+
+customer also viewed products
+
+
+
+162
+
+
+
+Allcommerce2022

@@ -3,7 +3,6 @@ import imgBanner from "./img/img-banner.png"
 import { Link } from "react-router-dom";
 function Banner() {
     return (
-        <>
             <div className="banner">
                 <div className="banner-content">
                     <h2 className="banner-title">Super lottery on the equity <span>blockchain</span>  technology platform</h2>
@@ -11,10 +10,10 @@ function Banner() {
                         Global decentralize network to buy & share lottery ticket easily
                     </p>
                     <div className="banner-buttons">
-                        <Link to="#" className="btn-primary btn-contact">
+                        <Link to="/" className="btn-primary btn-contact">
                             Contact To Join
                         </Link>
-                        <Link to="#" className="btn-primary btn-sql">
+                        <Link to="/" className="btn-primary btn-sql">
                             SPL DISTRIBUTION
                         </Link>
                     </div>
@@ -23,7 +22,6 @@ function Banner() {
                 </div>
                 </div>
             </div>
-        </>
     );
 }
 

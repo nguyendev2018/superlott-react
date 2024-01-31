@@ -25,10 +25,8 @@ const Public = () => {
             </div>
             <WhyBlockChain />
             <MobileApp />
-            <div className="general-section2 content-padding">
                 <SPLMinning />
                 <RevenueStructure />
-            </div>
             <OurServices />
             <HowToPlay />
             <Roadmap />

@@ -3,7 +3,9 @@
     src: url('./fonts/SpaceGrotesk-Regular.ttf');
 }
 .spl {
-    padding-bottom: 178px;
+    background-image: url('./img/bg-spl-minning.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .spl-content h2 {

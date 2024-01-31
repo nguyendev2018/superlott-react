@@ -54,7 +54,7 @@ function WhyBlockChain() {
                             ))}
                         </div>
                         <Link
-                            href="/"
+                            to="/"
                             className="btn-block btn-primary btn--yellow"
                         >
                             get started

@@ -1,0 +1,31 @@
+add social media links
+
+Channel Manager => Edit storefront => social media links
+note : add address social
+
+Thêm desc ở Newsletter
+
+Marketing => Email Marketing ->Newsletter Settings ->Show Newsletter Summary?
+
+Bỏ tính năng review 
+
+Settings => Product => Comments => Built-in => unchecked Only accept product reviews from past customers 
+
+Thêm Gift Certificates
+
+Marketing => Gift Certificates -> Tick Enable Gift Certificates? -> $10.00
+$20.00
+$50.00
+$100.00
+
+Chỉnh out of stock 
+
+Có hai phần : 
+	+ Ở product 
+	+ Ở seetings : 
+		++ Products > Inventory > Tick Show out of stick message ....
+
+
+chỉnh out of stock 
+
+settings => stock level => Only show => tick show out of stock
